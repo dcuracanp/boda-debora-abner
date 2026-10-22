@@ -1,0 +1,22 @@
+INVITACIÓN DÉBORA & ABNER — FORMULARIO ESMERALDA
+
+El formulario ya tiene el diseño solicitado y NO abre Google Forms.
+ATENCIÓN: aún no registra respuestas hasta conectar Apps Script.
+
+1. Abre la hoja de Google Sheets creada desde Google Forms.
+2. Menú Extensiones > Apps Script.
+3. Pega el contenido del archivo Google_Apps_Script.gs y guarda.
+4. Implementar > Nueva implementación > Aplicación web.
+   Ejecutar como: Yo. Acceso: Cualquier persona.
+   Autoriza los permisos de Google para tu propia hoja.
+5. Copia la URL que termina en /exec.
+6. Abre index.html en un editor de texto y busca:
+   const CONFIG={appsScriptUrl:''};
+   Entre las comillas pega la URL /exec.
+7. Guarda index.html y sube la carpeta completa a tu alojamiento web.
+8. Envía una confirmación de prueba y verifica la pestaña "Confirmaciones web".
+
+NOTA: el envío desde navegador usa modo no-cors. El mensaje de enviado
+significa que el navegador realizó el envío, no es una confirmación
+verificable de que Google guardó la fila. Comprueba la hoja con una prueba.
+Google Forms y sus respuestas originales se conservan por separado.
